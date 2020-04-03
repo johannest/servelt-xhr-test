@@ -3,7 +3,7 @@
     var loadTheme = function (url) {
         console.log("loadTheme", url);
 
-        var href = url + '/styles.css';
+        var href = url + '/styles.css'+"?test";
         var stylesheet = document.createElement('link');
         stylesheet.setAttribute('rel', 'stylesheet');
         stylesheet.setAttribute('type', 'text/css');

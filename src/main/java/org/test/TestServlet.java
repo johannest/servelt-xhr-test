@@ -51,7 +51,7 @@ public class TestServlet implements Servlet {
         out.print("                myFunction(this);");
         out.print("            }");
         out.print("        };");
-        out.print("        xmlhttp.open(\"GET\", \"test.xml\", true);");
+        out.print("        xmlhttp.open(\"GET\", \"test\"+\".xml\", true);");
         out.print("        xmlhttp.send();");
         out.print("    };");
         out.print("    var myFunction = function (xml) {");
@@ -65,7 +65,7 @@ public class TestServlet implements Servlet {
         out.print("        }");
         out.print("        document.getElementById(\"demo\").innerHTML = table;");
         out.print("    };");
-        out.print("    var tryRedirect = function () {window.open(\"/servelt-xhr-test/styles.css\", \"_self\");}");
+        out.print("    var tryRedirect = function () {window.open(\"/servelt-xhr-test/\"+\"styles.css\", \"_self\");}");
         out.print("</script>");
     }
 
